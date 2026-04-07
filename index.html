@@ -3,39 +3,26 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <!-- Primary Meta Tags -->
+
   <meta name="title" content="Decoupling Tissue and Abdominal Forces in Laparoscopic Robotic Surgery via Viscoelastic Modeling - Galán-Cuenca et al.">
   <meta name="description" content="A force-decoupling method that estimates, using only one force sensor, the individual forces applied to the abdominal wall and to internal soft tissue through a viscoelastic modeling approach based on Maxwell elements.">
-  <meta name="keywords" content="laparoscopic surgery, robotic surgery, force decoupling, viscoelastic modeling, Maxwell model, force control, trocar, abdominal wall">
+  <meta name="keywords" content="laparoscopy surgery, viscoelastic models, RCM, robot, control, least-squares, force decoupling, surgical robotics">
   <meta name="author" content="Alvaro Galán-Cuenca, Juan María Herrera-López, Isabel García-Morales, Victor Muñoz">
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
-  
-  <!-- Open Graph / Facebook -->
+
   <meta property="og:type" content="article">
-  <meta property="og:site_name" content="University of Málaga">
+  <meta property="og:site_name" content="Universidad de Málaga">
   <meta property="og:title" content="Decoupling Tissue and Abdominal Forces in Laparoscopic Robotic Surgery via Viscoelastic Modeling">
   <meta property="og:description" content="A force-decoupling method that estimates, using only one force sensor, the individual forces applied to the abdominal wall and to internal soft tissue through a viscoelastic modeling approach based on Maxwell elements.">
   <meta property="og:url" content="https://galanmon18.github.io/uma-Decoupling-Tissue-and-Abdominal-Forces/">
-  <meta property="og:image" content="https://galanmon18.github.io/uma-Decoupling-Tissue-and-Abdominal-Forces/static/images/social_preview.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Decoupling Tissue and Abdominal Forces - Research Preview">
-  <meta property="article:published_time" content="2026-01-01T00:00:00.000Z">
+  <meta property="article:published_time" content="2026-02-21T00:00:00.000Z">
   <meta property="article:author" content="Alvaro Galán-Cuenca">
-  <meta property="article:section" content="Research">
-  <meta property="article:tag" content="laparoscopic surgery">
-  <meta property="article:tag" content="force decoupling">
 
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Decoupling Tissue and Abdominal Forces in Laparoscopic Robotic Surgery via Viscoelastic Modeling">
   <meta name="twitter:description" content="A force-decoupling method that estimates, using only one force sensor, the individual forces applied to the abdominal wall and to internal soft tissue through a viscoelastic modeling approach based on Maxwell elements.">
-  <meta name="twitter:image" content="https://galanmon18.github.io/uma-Decoupling-Tissue-and-Abdominal-Forces/static/images/social_preview.png">
-  <meta name="twitter:image:alt" content="Decoupling Tissue and Abdominal Forces - Research Preview">
 
-  <!-- Academic/Research Specific -->
   <meta name="citation_title" content="Decoupling Tissue and Abdominal Forces in Laparoscopic Robotic Surgery via Viscoelastic Modeling">
   <meta name="citation_author" content="Galán-Cuenca, Alvaro">
   <meta name="citation_author" content="Herrera-López, Juan María">
@@ -44,366 +31,294 @@
   <meta name="citation_publication_date" content="2026">
   <meta name="citation_journal_title" content="Applied Sciences">
   <meta name="citation_doi" content="10.3390/app16042099">
-  <meta name="citation_pdf_url" content="https://www.mdpi.com/2076-3417/16/4/2099">
-  
-  <!-- Additional SEO -->
+
   <meta name="theme-color" content="#2563eb">
-  <meta name="msapplication-TileColor" content="#2563eb">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  
-  <!-- Preconnect for performance -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://ajax.googleapis.com">
-  <link rel="preconnect" href="https://documentcloud.adobe.com">
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
 
   <title>Decoupling Tissue and Abdominal Forces - Galán-Cuenca et al. | Applied Sciences 2026</title>
-  
-  <!-- Favicon and App Icons -->
+
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link rel="apple-touch-icon" href="static/images/favicon.ico">
-  
-  <!-- Critical CSS - Load synchronously -->
+
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/index.css">
-  
-  <!-- Non-critical CSS - Load asynchronously -->
+
   <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  
-  <!-- Fallback for browsers that don't support preload -->
+
   <noscript>
     <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
     <link rel="stylesheet" href="static/css/bulma-slider.min.css">
     <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   </noscript>
-  
-  <!-- Fonts - Optimized loading -->
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <!-- Defer non-critical JavaScript -->
+
   <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
   <script defer src="static/js/bulma-carousel.min.js"></script>
   <script defer src="static/js/bulma-slider.min.js"></script>
   <script defer src="static/js/index.js"></script>
-  
-  <!-- Structured Data for Academic Papers -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ScholarlyArticle",
-    "headline": "Decoupling Tissue and Abdominal Forces in Laparoscopic Robotic Surgery via Viscoelastic Modeling",
-    "description": "A force-decoupling method that estimates, using only one force sensor, the individual forces applied to the abdominal wall and to internal soft tissue through a viscoelastic modeling approach based on Maxwell elements.",
-    "author": [
-      {
-        "@type": "Person",
-        "name": "Alvaro Galán-Cuenca",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "University of Málaga"
-        }
-      },
-      {
-        "@type": "Person",
-        "name": "Juan María Herrera-López",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "University of Málaga"
-        }
-      },
-      {
-        "@type": "Person",
-        "name": "Isabel García-Morales",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "University of Málaga"
-        }
-      },
-      {
-        "@type": "Person",
-        "name": "Victor Muñoz",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "University of Málaga"
-        }
-      }
-    ],
-    "datePublished": "2026-01-01",
-    "publisher": {
-      "@type": "Organization",
-      "name": "Applied Sciences (MDPI)"
-    },
-    "url": "https://galanmon18.github.io/uma-Decoupling-Tissue-and-Abdominal-Forces/",
-    "image": "https://galanmon18.github.io/uma-Decoupling-Tissue-and-Abdominal-Forces/static/images/social_preview.png",
-    "keywords": ["laparoscopic surgery", "robotic surgery", "force decoupling", "viscoelastic modeling", "Maxwell model", "force control"],
-    "abstract": "Laparoscopic surgery provides minimally invasive access to the abdominal cavity but poses control challenges for robotic systems due to the fulcrum constraint at the abdominal wall and the simultaneous interaction of the instrument with both the abdominal wall and internal soft tissue. While current clinical platforms (e.g., da Vinci) primarily rely on visual feedback and do not possess force sensors at the instrument tip, the transition to autonomous robotic surgery requires precise force feedback to ensure safety and effective tissue manipulation. Therefore, developing methods to decouple interaction forces using a single force sensor configuration is a critical enabling technology for future instrumented surgical robots. This paper presents a force-decoupling method that estimates, using only one force sensor, the individual forces applied to the abdominal wall and to internal soft tissue through a viscoelastic modeling approach based on Maxwell elements. Two configurations were evaluated, showing that a single-element Maxwell model provides the best trade-off between accuracy and computational complexity, achieving estimation errors of 9% and 13% for abdominal wall forces, with a root mean square error (RMSE) below 0.36 N. The method was implemented and experimentally validated in a force-controlled robotic system, demonstrating its effectiveness in improving force regulation and interaction safety without requiring additional sensors.",
-    "isAccessibleForFree": true,
-    "license": "https://creativecommons.org/licenses/by/4.0/",
-    "mainEntity": {
-      "@type": "WebPage",
-      "@id": "https://galanmon18.github.io/uma-Decoupling-Tissue-and-Abdominal-Forces/"
-    },
-    "about": [
-      {
-        "@type": "Thing",
-        "name": "Surgical Robotics"
-      },
-      {
-        "@type": "Thing", 
-        "name": "Force Control"
-      }
-    ]
-  }
-  </script>
-  
-  <!-- Website/Organization Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "University of Málaga",
-    "url": "https://www.uma.es",
-    "logo": "https://galanmon18.github.io/uma-Decoupling-Tissue-and-Abdominal-Forces/static/images/favicon.ico",
-    "sameAs": [
-      "https://github.com/galanmon18"
-    ]
-  }
-  </script>
 </head>
 <body>
 
-
-  <!-- Scroll to Top Button -->
   <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
     <i class="fas fa-chevron-up"></i>
   </button>
 
-  <!-- More Works Dropdown -->
-  <div class="more-works-container">
-    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
-      <i class="fas fa-flask"></i>
-      More Works
-      <i class="fas fa-chevron-down dropdown-arrow"></i>
-    </button>
-    <div class="more-works-dropdown" id="moreWorksDropdown">
-      <div class="dropdown-header">
-        <h4>More Works from Our Lab</h4>
-        <button class="close-btn" onclick="toggleMoreWorks()">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      <div class="works-list">
-        <!-- TODO: Replace with your lab's related works or remove this section -->
-        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 1</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2024</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-
   <main id="main-content">
+
+  <!-- ===================== HEADER ===================== -->
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Decoupling Tissue and Abdominal Forces in Laparoscopic Robotic Surgery via Viscoelastic Modeling</h1>
+
+            <h1 class="title is-1 publication-title">
+              Decoupling Tissue and Abdominal Forces in Laparoscopic Robotic Surgery via Viscoelastic Modeling
+            </h1>
+
             <div class="is-size-5 publication-authors">
               <span class="author-block">
-                <a href="#" target="_blank">Alvaro Galán-Cuenca</a>,</span>
+                <!-- TODO: replace # with Google Scholar / personal page URL -->
+                <a href="#" target="_blank">Alvaro Galán-Cuenca</a><sup>*</sup>,
+              </span>
               <span class="author-block">
-                <a href="#" target="_blank">Juan María Herrera-López</a>,</span>
+                <a href="#" target="_blank">Juan María Herrera-López</a>,
+              </span>
               <span class="author-block">
-                <a href="#" target="_blank">Isabel García-Morales</a>,</span>
+                <a href="#" target="_blank">Isabel García-Morales</a>,
+              </span>
               <span class="author-block">
                 <a href="#" target="_blank">Victor Muñoz</a>
               </span>
             </div>
 
             <div class="is-size-5 publication-authors">
-              <span class="author-block">University of Málaga<br>Applied Sciences, Vol. 16, No. 4, 2026</span>
+              <span class="author-block">
+                Departamento de Ingeniería de Sistemas y Automática, Universidad de Málaga<br>
+                <em>Applied Sciences</em>, Vol. 16, No. 4, Article 2099 &mdash; Published 21 February 2026
+              </span>
+              <span class="eql-cntrb"><small><br><sup>*</sup>Corresponding author: alvarogalan98@uma.es</small></span>
             </div>
 
             <div class="column has-text-centered">
               <div class="publication-links">
-                <!-- Paper link -->
+
                 <span class="link-block">
                   <a href="https://www.mdpi.com/2076-3417/16/4/2099" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span>
-
-              <!-- GitHub Code link - TODO: update or remove if not applicable -->
-              <span class="link-block">
-                <a href="https://github.com/galanmon18" target="_blank"
-                class="external-link button is-normal is-rounded is-dark">
-                <span class="icon">
-                  <i class="fab fa-github"></i>
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                    <span>Paper</span>
+                  </a>
                 </span>
-                <span>Code</span>
-              </a>
-            </span>
 
+                <span class="link-block">
+                  <a href="https://doi.org/10.3390/app16042099" target="_blank"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fas fa-link"></i></span>
+                    <span>DOI</span>
+                  </a>
+                </span>
+
+              </div>
             </div>
+
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+  <!-- ===================== END HEADER ===================== -->
 
 
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <!-- TODO: Replace with your teaser video, or remove this section -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        <!-- TODO: Replace with a one-sentence summary of your method/results -->
-        A single force sensor enables decoupling of abdominal wall and tissue interaction forces in laparoscopic robotic surgery using a Maxwell viscoelastic model.
-      </h2>
+  <!-- ===================== ABSTRACT ===================== -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Laparoscopic surgery provides minimally invasive access to the abdominal cavity but
+              poses control challenges for robotic systems due to the fulcrum constraint at the abdominal
+              wall and the simultaneous interaction of the instrument with both the abdominal wall
+              and internal soft tissue. While current clinical platforms (e.g., da Vinci) primarily rely on
+              visual feedback and do not possess force sensors at the instrument tip, the transition to
+              autonomous robotic surgery requires precise force feedback to ensure safety and effective
+              tissue manipulation. Therefore, developing methods to decouple interaction forces using a
+              single force sensor configuration is a critical enabling technology for future instrumented
+              surgical robots. This paper presents a force-decoupling method that estimates, using
+              only one force sensor, the individual forces applied to the abdominal wall and to internal
+              soft tissue through a viscoelastic modeling approach based on Maxwell elements. Two
+              configurations were evaluated, showing that a single-element Maxwell model provides
+              the best trade-off between accuracy and computational complexity, achieving estimation
+              errors of 9% and 13% for abdominal wall forces, with a root mean square error (RMSE)
+              below 0.36 N. The method was implemented and experimentally validated in a force-controlled
+              robotic system, demonstrating its effectiveness in improving force regulation and
+              interaction safety without requiring additional sensors.
+            </p>
+            <p><strong>Keywords:</strong> laparoscopy surgery; viscoelastic models; RCM; robot; control; least-squares</p>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
-<!-- End teaser video -->
+  </section>
+  <!-- ===================== END ABSTRACT ===================== -->
 
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Laparoscopic surgery provides minimally invasive access to the abdominal cavity but poses control challenges for robotic systems due to the fulcrum constraint at the abdominal wall and the simultaneous interaction of the instrument with both the abdominal wall and internal soft tissue. While current clinical platforms (e.g., da Vinci) primarily rely on visual feedback and do not possess force sensors at the instrument tip, the transition to autonomous robotic surgery requires precise force feedback to ensure safety and effective tissue manipulation. Therefore, developing methods to decouple interaction forces using a single force sensor configuration is a critical enabling technology for future instrumented surgical robots. This paper presents a force-decoupling method that estimates, using only one force sensor, the individual forces applied to the abdominal wall and to internal soft tissue through a viscoelastic modeling approach based on Maxwell elements. Two configurations were evaluated, showing that a single-element Maxwell model provides the best trade-off between accuracy and computational complexity, achieving estimation errors of 9% and 13% for abdominal wall forces, with a root mean square error (RMSE) below 0.36 N. The method was implemented and experimentally validated in a force-controlled robotic system, demonstrating its effectiveness in improving force regulation and interaction safety without requiring additional sensors.
+
+  <!-- ===================== CAROUSEL 1: PROBLEM & SETUP ===================== -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3 has-text-centered">Problem and Experimental Setup</h2>
+        <p class="has-text-centered mb-4">
+          The instrument interacts simultaneously with the abdominal wall at the fulcrum and with
+          internal soft tissue — but only a single force sensor is available at the robot end-effector.
+        </p>
+        <div id="problem-carousel" class="carousel results-carousel">
+
+          <div class="item">
+            <!-- TODO: export Figure 1 from the paper PDF and save as static/images/fig1_problem_overview.jpg -->
+            <img src="static/images/fig1_problem_overview.jpg"
+                 alt="Single force sensor measuring two interaction forces along the instrument"
+                 loading="lazy"/>
+            <h2 class="subtitle has-text-centered">
+              <strong>Fig. 1</strong> — A single force sensor at the robot end-effector must resolve
+              two separate interaction forces: one at the abdominal wall (fulcrum) and one at the
+              internal soft tissue.
+            </h2>
+          </div>
+
+          <div class="item">
+            <!-- TODO: export Figure 2a from the paper PDF and save as static/images/fig2a_force_collection.jpg -->
+            <img src="static/images/fig2a_force_collection.jpg"
+                 alt="Robotic scenario for force data collection"
+                 loading="lazy"/>
+            <h2 class="subtitle has-text-centered">
+              <strong>Fig. 2a</strong> — Force data collection platform. Three independent sensors measure
+              the end-effector force (E1), abdominal wall force (E2), and soft-tissue force (E3) simultaneously.
+            </h2>
+          </div>
+
+          <div class="item">
+            <!-- TODO: export Figure 3 from the paper PDF and save as static/images/fig3_training_setup.jpg -->
+            <img src="static/images/fig3_training_setup.jpg"
+                 alt="Physical training setup with two UR3 robots and force sensors"
+                 loading="lazy"/>
+            <h2 class="subtitle has-text-centered">
+              <strong>Fig. 3</strong> — Physical training and validation setup: a UR3 robot carries
+              the surgical instrument; a UR3e holds the abdominal phantom; a tissue pad provides
+              ground-truth force data.
+            </h2>
+          </div>
+
+          <div class="item">
+            <!-- TODO: export Figure 7 from the paper PDF and save as static/images/fig7_viscoelastic_models.jpg -->
+            <img src="static/images/fig7_viscoelastic_models.jpg"
+                 alt="Kelvin-Voigt and Maxwell viscoelastic models"
+                 loading="lazy"/>
+            <h2 class="subtitle has-text-centered">
+              <strong>Fig. 7</strong> — Two viscoelastic tissue models evaluated: Kelvin–Voigt
+              (spring + damper in parallel) and the single-element Maxwell model
+              (spring k&#8734; in parallel with a Maxwell element k&#8321;–&#951;&#8321; in series).
+            </h2>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===================== END CAROUSEL 1 ===================== -->
+
+
+  <!-- ===================== ARCHITECTURE ===================== -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Control Architecture</h2>
+          <div class="content has-text-justified">
+            <p>
+              The proposed architecture combines a hybrid force/position controller with an online
+              force-decoupling layer. Abdominal wall forces are regulated via an admittance controller
+              that corrects the fulcrum estimate in real time. Tissue interaction forces along the
+              insertion axis are regulated via a parallel force/position controller. The decoupler
+              estimates tissue force from the measured deformation &Delta;e using the identified
+              Maxwell model G(z), and subtracts it from the total end-effector reading to recover
+              the abdominal force.
+            </p>
+          </div>
+          <!-- TODO: export Figure 4 from the paper PDF and save as static/images/fig4_architecture.jpg -->
+          <img src="static/images/fig4_architecture.jpg"
+               alt="General force/position control architecture for laparoscopic surgery"
+               loading="lazy"
+               style="max-width:100%; border-radius:8px;"/>
+          <p class="subtitle has-text-centered mt-2">
+            <strong>Fig. 4</strong> — General control architecture. The Force Decoupler (right)
+            uses the viscoelastic model G(z) to separate abdominal and tissue force estimates
+            fed back to their respective controllers.
           </p>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- End paper abstract -->
+  </section>
+  <!-- ===================== END ARCHITECTURE ===================== -->
 
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          <!-- TODO: Replace with description of this result -->
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
+  <!-- ===================== CAROUSEL 2: RESULTS ===================== -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3 has-text-centered">Results</h2>
+        <p class="has-text-centered mb-4">
+          The Maxwell model achieves 9% estimation error for soft-tissue forces and 13% for
+          abdominal forces (RMSE &lt; 0.36 N, R&#178; = 0.98). Force decoupling enables simultaneous
+          safe regulation of both contact sites.
+        </p>
+        <div id="results-carousel" class="carousel results-carousel">
 
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <div class="publication-video">
-            <!-- TODO: Replace YOUR_VIDEO_ID with your actual YouTube video ID -->
-            <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <div class="item">
+            <!-- TODO: export Figure 10 from the paper PDF and save as static/images/fig10_force_estimation.jpg -->
+            <img src="static/images/fig10_force_estimation.jpg"
+                 alt="Force estimation validation: sensor E1 vs estimated tissue and abdominal forces"
+                 loading="lazy"/>
+            <h2 class="subtitle has-text-centered">
+              <strong>Fig. 10</strong> — Validation of force decoupling. Top: total force at E1.
+              Middle: measured vs. estimated soft-tissue force (9% error).
+              Bottom: measured vs. estimated abdominal force (13% error, RMSE = 0.35 N, R&#178; = 0.98).
+            </h2>
           </div>
+
+          <div class="item">
+            <!-- TODO: export Figure 11 from the paper PDF and save as static/images/fig11_control_comparison.jpg -->
+            <img src="static/images/fig11_control_comparison.jpg"
+                 alt="Comparison of three control strategies"
+                 loading="lazy"/>
+            <h2 class="subtitle has-text-centered">
+              <strong>Fig. 11</strong> — Control strategy comparison. The proposed dual-force control
+              with decoupling (red) keeps abdominal forces near 0 N while accurately tracking a 4 N
+              tissue force reference, outperforming position-only and non-decoupled force control.
+            </h2>
+          </div>
+
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- End youtube video -->
+  </section>
+  <!-- ===================== END CAROUSEL 2 ===================== -->
 
 
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-      <!-- TODO: Replace with your poster PDF, or remove this section -->
-      <iframe src="static/pdfs/sample.pdf" width="100%" height="550">
-      </iframe>
-    </div>
-  </div>
-</section>
-<!--End paper poster -->
-
-
-<!--BibTex citation -->
+  <!-- ===================== BIBTEX ===================== -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <div class="bibtex-header">
@@ -414,37 +329,41 @@
         </button>
       </div>
       <pre id="bibtex-code"><code>@Article{app16042099,
-  AUTHOR = {Galán-Cuenca, Alvaro and Herrera-López, Juan María and García-Morales, Isabel and Muñoz, Victor},
-  TITLE = {Decoupling Tissue and Abdominal Forces in Laparoscopic Robotic Surgery via Viscoelastic Modeling},
-  JOURNAL = {Applied Sciences},
-  VOLUME = {16},
-  YEAR = {2026},
-  NUMBER = {4},
+  AUTHOR         = {Galán-Cuenca, Alvaro and Herrera-López, Juan María and García-Morales, Isabel and Muñoz, Victor},
+  TITLE          = {Decoupling Tissue and Abdominal Forces in Laparoscopic Robotic Surgery via Viscoelastic Modeling},
+  JOURNAL        = {Applied Sciences},
+  VOLUME         = {16},
+  YEAR           = {2026},
+  NUMBER         = {4},
   ARTICLE-NUMBER = {2099},
-  URL = {https://www.mdpi.com/2076-3417/16/4/2099},
-  ISSN = {2076-3417},
-  DOI = {10.3390/app16042099}
+  URL            = {https://www.mdpi.com/2076-3417/16/4/2099},
+  ISSN           = {2076-3417},
+  DOI            = {10.3390/app16042099}
 }</code></pre>
     </div>
-</section>
-<!--End BibTex citation -->
+  </section>
+  <!-- ===================== END BIBTEX ===================== -->
 
 
   <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This page was built using the
+              <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>
+              adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+              This website is licensed under a
+              <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">
+                Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
-  </body>
-  </html>
+  </main>
+</body>
+</html>
